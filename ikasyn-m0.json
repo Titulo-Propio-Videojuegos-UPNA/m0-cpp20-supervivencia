@@ -1,0 +1,47 @@
+{
+  "id": "vg-m0",
+  "title": "M0 - Pre-curso C++ (0 ECTS)",
+  "description": "Headstart autónomo antes de S1: C++17 de suelo (const, punteros, RAII, clases, virtual, plantillas mínimas). Sin Unreal. Temario en LearnCpp.com (ruta curada) + ejercicios CMake del repo del título. 0 ECTS; no computa en las 200 h.",
+  "progress": 0,
+  "visibility": "student",
+  "group": "Pre-curso",
+  "groupOrder": 0,
+  "objective": "Llegar a M2 pudiendo defender const, referencias, punteros, RAII, una clase y virtual, compilando C++17 en local.",
+  "practiceRoutine": "Autónomo; sin nota. Diagnóstico en la semana 1 de M2 (sin corte). Los ejercicios NO corren en el runner de Ikasyn (solo Python/Java): se hacen en VS/CMake.",
+  "sourcePath": "evolucion/m0-cpp/guia-alumnado.md",
+  "relatedModuleIds": ["vg-m2"],
+  "sections": [
+    {
+      "id": "m0-ficha",
+      "title": "Ficha",
+      "sourcePath": "evolucion/m0-cpp/guia-alumnado.md",
+      "body": "- Codigo: M0\n- ECTS: 0 (no entra en las 200 h ni en los 20 ECTS)\n- Horas estimadas: 15-20 autonomas\n- Idioma: Castellano (LearnCpp y cppreference en ingles)\n- Modalidad: Autonomo, antes de febrero 2027\n- Envio: preinscritos antes de octubre 2026; reenvio en matricula"
+    },
+    {
+      "id": "m0-honestidad",
+      "title": "Tres frases honestas",
+      "sourcePath": "evolucion/m0-cpp/guia-alumnado.md",
+      "body": "- Las practicas de motor piden C++ y un repo PERSONAL. El ejercicio de clase no cuenta como ese portfolio.\n- Navarra no es el mercado de programacion de videojuegos.\n- Este titulo no coloca en S1. M0 solo evita que M2 sea un muro."
+    },
+    {
+      "id": "m0-recursos",
+      "title": "Que usar (consenso Reddit + ISO)",
+      "sourcePath": "evolucion/m0-cpp/guia-alumnado.md",
+      "body": "- CURSO (gratis): https://www.learncpp.com/ — lo que Reddit/r/cpp recomienda. Lees alli; no copiamos el texto aqui.\n- OFICIAL ISO: https://isocpp.org/get-started (compilador). https://isocpp.org/wiki/faq/how-to-learn-cpp — NO aprendas C para aprender C++.\n- REGLAS: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines (R.1 RAII, R.11 sin new/delete, Con.1 const, F.16 const T&, C.128 dtor virtual).\n- DICCIONARIO: https://en.cppreference.com/ (no es curso).\n- LIBRO OPCIONAL si ya programas: Stroustrup, A Tour of C++ (recomendacion ISO).\n- VIDEO solo si te atas: The Cherno C++ playlist. No sustituye LearnCpp. El curso de 31 h de freeCodeCamp no cabe en 15-20 h.\n- NO: Udemy como temario, tutorial de cplusplus.com, C++ de Unreal, curso de C «para luego pasar a C++»."
+    },
+    {
+      "id": "m0-ruta",
+      "title": "Ruta de capitulos LearnCpp",
+      "sourcePath": "evolucion/m0-cpp/guia-alumnado.md",
+      "body": "- 0 Compilar (1-2 h): ch. 0 compilador/linker, C++17; ch. 2.8 varios cpp.\n- 1 const (1 h): ch. 5.1 → ejercicio 01_const.\n- 2 Referencias (2 h): ch. 12 pass by const ref → 02_referencias.\n- 3 Punteros (2-3 h): ch. 12 nullptr → 03_punteros.\n- 4 RAII (2-3 h): ch. 19 solo para ver el peligro; ch. 22.1-22.5 smart pointers → 04_raii.\n- 5 Clases (2-3 h): ch. 14-15 → 05_clase.\n- 6 virtual (2 h): ch. 24-25 → 06_virtual.\n- 7 Plantillas minimas (1-2 h): ch. 11.1 y 11.7, NO el ch. 26 entero → 07_plantillas.\n- 8 Varios archivos + vector (2 h): ch. 16 y 2.8/15.2 → 08_archivos.\n- Fuera de M0: UCLASS/GC (M2), cuaterniones (TR.1)."
+    },
+    {
+      "id": "m0-ejercicios",
+      "title": "Ejercicios del pack (fuera del runner)",
+      "sourcePath": "evolucion/m0-cpp/ejercicios/README.md",
+      "body": "Ikasyn no ejecuta C++ (el runner es Python/Java). Los 8 ejercicios viven en el repo del titulo: evolucion/m0-cpp/ejercicios. C++17, assert, CMake. cmake -B build -S . && cmake --build build && ctest --test-dir build --output-on-failure. Soluciones de referencia: ejercicios/soluciones (equipo; no las copies a ciegas)."
+    }
+  ],
+  "resources": [],
+  "exercises": []
+}
